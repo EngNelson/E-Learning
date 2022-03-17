@@ -11,10 +11,14 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css" />
 
     <!-- GOOGLE FONT (MONTSERR) -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700;1,800;1,900&family=Mulish:wght@400;500;600;700;800&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,600;1,800;1,900&display=swap"
         rel="stylesheet" />
+
+    <!-- SWIPER JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -238,10 +242,10 @@
     </section>
     <!-- ================= END OF FAQs =================== -->
 
-    <section class="container testimonials__Container">
+    <section class="container testimonials__container myswiper">
         <h2>Students' Testimonials</h2>
-        <div>
-            <article class="testimonial">
+        <div class="swiper-wrapper">
+            <article class="testimonial" class="swiper mySwiper">
                 <div class="avatar">
                     <img src="./images/avatar1.jpg" />
                 </div>
@@ -255,7 +259,7 @@
                     </p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial" class="swiper mySwiper">
                 <div class="avatar">
                     <img src="./images/avatar2.jpg" />
                 </div>
@@ -269,7 +273,7 @@
                     </p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial" class="swiper mySwiper">
                 <div class="avatar">
                     <img src="./images/avatar3.jpg" />
                 </div>
@@ -283,7 +287,7 @@
                     </p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial" class="swiper mySwiper">
                 <div class="avatar">
                     <img src="./images/avatar4.jpg" />
                 </div>
@@ -297,7 +301,7 @@
                     </p>
                 </div>
             </article>
-            <article class="testimonial">
+            <article class="testimonial" class="swiper mySwiper">
                 <div class="avatar">
                     <img src="./images/avatar5.jpg" />
                 </div>
@@ -312,9 +316,81 @@
                 </div>
             </article>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__1">
+                <a href="index.html" class="footer__logo">
+                    <h4>BECHEM</h4>
+                </a>
+                <p>Let's relates with our self to make the world a better place.</p>
+            </div>
+
+            <div class="footer__2">
+                <h4>Permalinks</h4>
+                <ul class="permalinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__3">
+                <h4>Primacy</h4>
+                <ul class="privacy">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Refund Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer__4">
+                <h4>Contact Us</h4>
+                <div class="privacy">
+                    <p>+01 234 567 8910</p>
+                    <p>shakir260@gmail.com</p>
+                </div>
+                <ul class="footer__socials">
+                    <li>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-instagram-alt"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="uil uil-linkedin-alt"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__copyright">
+                <small>Copyright &copy; BECHEM DEV.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // When window width is >= 600px
+            breakpoints: {
+                600: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
