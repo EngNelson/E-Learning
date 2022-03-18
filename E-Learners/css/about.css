@@ -53,3 +53,11 @@
 .achievement__card p {
     margin-top: 1rem;
 }
+
+
+/*-- ================= TEAM =================== --*/
+
+.team {
+    background: var(--color-bg1);
+    box-shadow: inset 0 0 3rem rgba(0, 0, 0, 0.5);
+}
