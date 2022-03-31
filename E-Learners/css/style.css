@@ -106,7 +106,7 @@ img {
 
 nav {
     background-color: transparent;
-    width: 100%;
+    width: 100vw;
     height: 5rem;
     position: fixed;
     top: 0;
@@ -114,12 +114,12 @@ nav {
 }
 
 
-/* change navbar style on scroll using javascript */
+/* change navbar style on scroll using javascript
 
 .window-scroll {
     background: var(--color-primary);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
-}
+} */
 
 .nav__container {
     height: 100%;
